@@ -5,6 +5,26 @@ import instagram from '../../Assests/Vector5.png'
 import twitter from '../../Assests/Vector6.png'
 
 function Footer() {
+
+    const[email, setEmail] = React.useState("");
+    function saveMail(e){
+        setEmail(e.target.value)
+    }
+
+    function fetchData(e){
+            e.preventDefault();
+    fetch("https://module-7-email-details-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json",
+        {
+            method : "POST",
+            headers : {'Content-Type' : 'application/json'},
+            body : JSON.stringify({
+                email : email
+            })
+        }).then(res => res.json())
+        .then(res => console.log(res))
+        console.log(email)
+        setEmail("")
+        }
   return (
     <div className='footer-comp'>
         <div className='footer-top'>
@@ -47,8 +67,15 @@ function Footer() {
             </div>
             <div className = 'footer-menu-item'>
                 <h5>Get in Touch</h5>
-                <input type="text" placeholder="Your Email"  className='your-email'/>
-                <button type="button" className='subscribe-button'>Subscribe</button>
+                <input type="text" 
+                placeholder="Your Email"  
+                className='your-email'
+                onChange={saveMail}
+                value = {email}
+                />
+                <button type="submit" 
+                className='subscribe-button'
+                onClick={fetchData}>Subscribe</button>
                 <p>lorem impsum dolor amit</p>
             </div>
         </div>

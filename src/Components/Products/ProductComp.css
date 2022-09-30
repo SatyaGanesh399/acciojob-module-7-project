@@ -1,7 +1,12 @@
 .products-comp{
-    width: 90%;
     margin: auto;
     margin: 20px;
+    overflow: auto;
+}
+.all-cards{
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto; */
 }
 .products-comp h3{
     text-align: left;
@@ -15,8 +20,9 @@
 }
 .product-card{
     width: 366px;
-    height: 472px;
+    /* height: 472px; */
     padding: 10px;
+    margin: 20px 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -31,6 +37,9 @@
 }
 .product-name{
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 80px;
     margin-left: 10px;
     font-size: 16px;
     line-height: 32px;
@@ -57,10 +66,10 @@
     color: black;
     margin-left: 10px;
 }
-.add-button{
+/* .add-button{
     padding: 10px;
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
     border-radius: 10px;
     background-color: #23A6F0;
     color: white;
@@ -71,4 +80,9 @@
     line-height: 32px;
     letter-spacing: 0.1px;
     color: white;
+} */
+.product-image{
+    object-fit: cover;
+    width: 366px;
+    height: 307px;
 }

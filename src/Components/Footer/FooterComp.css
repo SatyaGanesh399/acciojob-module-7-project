@@ -40,7 +40,6 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.2px;
-    color: #;
 }
 .subscribe-button{
     padding: 25px;
@@ -50,6 +49,7 @@
     color: white;
     font-size: 14px;
     font-weight: 400;
+    cursor: pointer;
 }
 .love-message{
     width: 100%;
