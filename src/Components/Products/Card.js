@@ -28,9 +28,9 @@ function Card(props) {
             width : '90%',
             margin : '10px auto',
             borderRadius : '10px',
-            backgroundColor : 'white',
-            color : '#23A6F0',
-            border : '1px solid #23A6F0',
+            backgroundColor : 'green',
+            color : 'white',
+            border : '1px solid green',
             outline : 'none',
             fontWeight : '600',
             fontSize : '20px',
@@ -78,7 +78,7 @@ function Card(props) {
           className="add-button" 
           style = {style}
           onClick = {handleCart}>
-            ADD TO CART
+            {!isAdded ? <span>ADD TO CART</span> : <span>ADDED TO CART</span>}
           </button>
         </div>
   )
