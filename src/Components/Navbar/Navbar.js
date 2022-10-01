@@ -5,6 +5,7 @@ import search from "../../Assests/Vector1.png";
 import cart from "../../Assests/Vector2.png";
 import love from "../../Assests/Vector3.png";
 
+
 import { CounterContext } from "../CounterContext";
 
 
@@ -32,14 +33,14 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar-right">
-        <img src={account} alt="account" />
+        <img src={account} alt="account" className="account-symbol" />
         <p>Login / Register</p>
-        <img src={search} alt="" />
+        <img src={search} alt="" className="search-bar"/>
         <div className="cart-orders">
         <img src={cart} alt="" />
           <span className="cart-counter">{counter}</span>
         </div>
-        <img src={love} alt="" />
+        <img src={love} alt="" className="fav-symbol"/>
       </div>
     </div>
   );

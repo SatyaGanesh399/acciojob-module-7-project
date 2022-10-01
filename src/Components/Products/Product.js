@@ -19,7 +19,7 @@ function Product() {
         setData(apiData);
       });
       }, []);
- 
+
   let allCards = "";
 
   if (data.length > 0) {
@@ -27,10 +27,10 @@ function Product() {
       <Card
         id={item.id}
         key = {item.id}
-        name={item["product-name"]}
-        img={item["product-image"]}
-        oldPrice={item["old-price"]}
-        newPrice={item["new-price"]}
+        name={item["productName"]}
+        img={item["productImage"]}
+        oldPrice={item["oldPrice"]}
+        newPrice={item["newPrice"]}
       />
     ));
   }

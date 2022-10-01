@@ -5,7 +5,6 @@ import Banner from './Banner/Banner'
 import Product from './Products/Product'
 import Footer from './Footer/Footer'
 
-
 function HomePage() {
 
   const [counter, setCounter] = React.useState(0);

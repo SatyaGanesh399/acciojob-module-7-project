@@ -49,6 +49,15 @@
     letter-spacing: 0.2px;
     color: #23A6F0;
     text-align: center;
+    cursor: pointer;
+}
+.account-symbol{
+    position: relative;
+    left: 18px;
+    cursor: pointer;
+}
+.search-bar{
+    cursor: pointer;
 }
 .cart-counter{
     font-size: 14px;
@@ -61,4 +70,8 @@
     /* background-color: #737373; */
     padding: -5px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.fav-symbol{
+    cursor: pointer;
 }
