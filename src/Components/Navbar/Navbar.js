@@ -41,6 +41,7 @@ function Navbar() {
           <span className="cart-counter">{counter}</span>
         </div>
         <img src={love} alt="" className="fav-symbol"/>
+        <span className="fav-num">1</span>
       </div>
     </div>
   );
